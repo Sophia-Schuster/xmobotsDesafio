@@ -13,35 +13,6 @@ Java, Spring-Boot, Maven
 Banco de dados:
 MySQL
 
-
-dependencias:
-
-npm install react-router-dom --save
-npm install react-pro-sidebar
-npm install react-hook-form --force
-
-npm install react react-dom leaflet
-npm install react-leaflet
-npm install -D @types/leaflet
-
-npm install bootstrap
-npm install axios
-
-npm i -s @material-ui/core
-npm i @material-ui/core --force
-npm install @mui/icons-material --force
-
-npm install --save validator --force
-
-npm i yup --force
-npm i formik --force
-
-Para o back:
-IntelliJ IDEA
-
-Para o front:
-Visual Studio Code (npm start)
-
 ## Programa
 
 ![image](https://user-images.githubusercontent.com/60801559/234744423-c835ac1c-9163-462f-af51-fdfa9c29a830.png)
@@ -74,3 +45,30 @@ Encontram-se em uma pasta "backend" como solicitado.
 
 ![image](https://user-images.githubusercontent.com/60801559/234745927-e792f2f1-78ec-4d16-a7b5-94cb5a25fec0.png)
 
+dependencias:
+
+npm install react-router-dom --save
+npm install react-pro-sidebar
+npm install react-hook-form --force
+
+npm install react react-dom leaflet
+npm install react-leaflet
+npm install -D @types/leaflet
+
+npm install bootstrap
+npm install axios
+
+npm i -s @material-ui/core
+npm i @material-ui/core --force
+npm install @mui/icons-material --force
+
+npm install --save validator --force
+
+npm i yup --force
+npm i formik --force
+
+Para o back:
+IntelliJ IDEA
+
+Para o front:
+Visual Studio Code (npm start)
