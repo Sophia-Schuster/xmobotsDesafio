@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    text-align: center;
+  }
+ 
+  .leaflet-container {
+    width: 80vw;
+    height: 100vh;
+  }
+
+  .inputFile{
+    display: block;
+  }

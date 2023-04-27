@@ -1,0 +1,188 @@
+#page-landing{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    
+}
+
+.site-image{
+    width: 100%; 
+}
+
+.logo-container{
+    text-align: center;
+}
+
+.logo-container img{
+    height: 11rem;
+}
+
+.logo-container h2{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+}
+
+.buttons-container
+.buttons-container .login{
+    width: 20rem;
+    height: 8.4rem;
+    border-radius: 0.8rem;
+    font: 700 2.0rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* alinha tudo ao centro */
+
+    text-decoration: none;
+    color: whitesmoke;
+    border: none;
+
+    /* Cores : #423f3f (preto) ou dodgerblue; ou #589DD4 (azul); para combinar com o logo*/
+
+    transition: background-color 0.2s;
+}
+
+.register{
+    border-radius: 1.0rem;
+    font: 700 2.0rem Archivo;
+    width: 25rem;
+    height: 8.4rem;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border: none;
+    background-color: #423f3f;
+}
+
+.login{
+    border-radius: 1.0rem;
+    font: 700 2.0rem Archivo;
+    width: 25rem;
+    height: 8.4rem;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border: none;
+    background-color: green;
+}
+
+.login:hover{
+    background: #423f3f;
+}
+
+.buttons-container button:first-child{
+    margin-right: 1.6rem;
+    /* aplico aqui para evitar que o distanciamento se aplique ao segundo botao tambem */
+} 
+
+.know-more{
+    font-size: 1.4rem;
+    color: rebeccapurple;
+    cursor: pointer;
+    text-decoration: underline rebeccapurple;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 699px){
+    :root{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 1100px){
+
+    #page-landing-content{
+        max-width: 1599px;
+
+        /* configuracao grid: */
+        display: grid;
+        grid-template-rows: 350px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:"logo image image" "buttons buttons more";
+        column-gap: 87px;
+        row-gap: 86px;
+
+    }
+
+    .logo-container{
+        grid-area: logo;
+        align-self: flex-end;
+        text-align: initial;
+        margin-bottom: 0;
+    }
+    .logo-container h2{
+        text-align: initial;
+        font-size: 3.6rem;
+    }
+    .logo-container img{
+        height: 160px;
+        margin-bottom: 1.4rem;
+        
+    }
+    .site-image{
+        grid-area: image;
+        justify-self: center;
+        height: 100%;
+        width: 100%;
+    }
+    .buttons-container{
+        grid-area: buttons;
+        justify-content: flex-start; 
+        margin: 0;
+    }
+    .buttons-container
+    .buttons-container .login{
+        font-size: 2.4rem;
+        width: 25rem;
+        height: 9.4rem;
+    }
+    .buttons-container button:first-child{
+        margin-right: 2.4rem;
+        /* evitar que o distanciamento se aplique ao segundo botao tambem */
+    } 
+    .know-more{
+        grid-area: more;
+        justify-self: center;
+        margin-top: 6.8rem;
+    }
+}
+
+@media (min-width: 1600px){
+
+    #page-landing-content{
+        max-width: 1920px;
+    }
+    .site-image{
+        height: 500px; 
+        width: 100%; 
+    }
+    .logo-container img{
+        height: 240px;
+    }
+    .buttons-container .register,
+    .buttons-container .login{
+        width: 30rem;
+        height: 10.4rem;
+    }
+    .know-more{
+        margin-top: 8.6rem;
+    }
+
+}

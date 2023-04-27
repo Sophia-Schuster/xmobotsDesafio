@@ -1,0 +1,45 @@
+/* irei utilizar a tecnica mobile first */
+:root{
+    font-size: 60%;
+}
+* { 
+    /* esse * define algo para todos elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    height: 100vh; 
+    /* altura vai ocupar 100% da tela */
+}
+
+body{
+    background: #F0F0F7;
+    /* fundo gradiente */
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Poppins;
+    /* 1.6rem - pego a font size do meu elemento e coloco ela 60% do meu font size (bom para aplicacoes responsivas, deixa a interface mais fluida) */
+    /* se eu precisar alterar minhas fonts size no futuro posso simplesmente mexer no font-size do root (60%) e todas vao mudar */
+}
+
+.container{
+    width: 90vw; 
+    /* ocupa 90% da tela horizontalmente */
+    max-width: 700px; 
+    /* porem ela nunca ira passar de 700px */
+}
+
+@media(min-width: 700px){
+    /* ajustes para tela maior, como computador. Layoult responsivo. */
+    :root{
+        font-size: 62.5%;
+    }
+}
